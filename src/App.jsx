@@ -5,6 +5,7 @@ import './App.css'
 import Todo from './assets/todo'
 import Actor from './actor'
 import Singer from './Singer'
+import BookList from './BookList'
 
 function App() {
    const actors = ['amir khan', 'salman khan', 'shakib khan', 'sharukh khan' ]
@@ -14,9 +15,17 @@ function App() {
       {name : 'asif rahman', age : 55},
       {name : 'neha kakkar', age : 35},
     ]
+    const books = [
+      {id: 1, name: 'physis', price: 100},
+      {id: 2, name: 'biology', price: 120},
+      {id: 3, name: 'math', price: 140},
+      {id: 4, name: 'chemistry', price: 110},
+      {id: 5, name: 'ict', price: 90},
+    ]
   return (
     <>
       <h1>Vite + React</h1>
+      <BookList Books = {books}></BookList>
       { singers.map(singer => <Singer singer={singer}></Singer>)
       }
       {actors.map(actor => <Actor name={actor}></Actor>)}
