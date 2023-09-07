@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <BookList Books = {books}></BookList>
+      <BookList books = {books}></BookList>
       { singers.map(singer => <Singer singer={singer}></Singer>)
       }
       {actors.map(actor => <Actor name={actor}></Actor>)}

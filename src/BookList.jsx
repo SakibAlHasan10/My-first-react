@@ -1,8 +1,12 @@
+ 
+ import Book from "./Book"
  export default function BookList({books}){
-    console.log(books)
+    // console.log(books[0])
     return (
-        <div>
-            <h2>Book: </h2>
+        <div >
+            {
+                books.map(book => <Book book={book}></Book> )
+            }
         </div>
     )
  }
